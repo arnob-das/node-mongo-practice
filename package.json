@@ -1,0 +1,14 @@
+{
+  "name": "node-mongo",
+  "version": "1.0.0",
+  "description": "Here I am learning Node JS and it's framework for backend web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnob Das",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

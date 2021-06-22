@@ -5,7 +5,17 @@
 import express from 'express'
 const app = express()
 
+const users = ["asad", "moin", "sabed", "susmita", "Sohana"]
+
 // HTTP Request (path, callback function)
+
+// :id => to get dynamic id from the users or client site.
+app.get('/users/:id', (req, res) => {
+    const id = req.params.id
+    const name = users[id]
+    //response send as an object or json format
+    res.send({id, name})
+})
 
 app.get('/', (req, res) => {
     // res.send("I Can Run Node Server. Yay !!!!")
